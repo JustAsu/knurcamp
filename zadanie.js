@@ -28,10 +28,18 @@ const uczniowe = [
     {wiek: 21, imie: "Gaweł"},   // 2
     {wiek: 37, imie: "Karolina"}, // 3
 ];
-
 function rozwiazanie()
 {
     // MIEJSCE NA WASZ KOD
+    for (const uczen in uczniowe){
+        uczniowe.push({
+            wiek: uczniowe[uczen].wiek-1,
+            imie: uczniowe[uczen].imie+' Zenon'
+        })
+    }
+
+    console.log(uczniowe)
+
 }
 
 rozwiazanie();
